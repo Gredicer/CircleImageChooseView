@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CropPicture</string>
+
+    <string name="allow_permission">请允许相关权限</string>
+    <string name="check_permission_reject">申请权限被拒绝</string>
+    <string name="check_permission_tip">APP运行需要相应的权限被拒绝，请到到设置页面开启权限</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="sdcard_no_exist">SD卡不存在</string>
+    <string name="camera_not_prepared">摄像头尚未准备好</string>
+</resources>
