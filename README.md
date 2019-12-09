@@ -113,7 +113,7 @@ avatarImageView.setBtnTextSize(30);
         });
 ```
 
-### Set and get image
+#### Set and get image
 ```
  avatarImageView.setImageURI( );	
  avatarImageView.getImage_uri();	// This uri is the image that you cut 
