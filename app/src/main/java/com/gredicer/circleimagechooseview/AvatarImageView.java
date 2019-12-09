@@ -128,6 +128,7 @@ public class AvatarImageView extends ImageView {
 
     public void init() {
         Log.d( "asd", "init: "+getContext());
+        cropImageUtils.FILE_CONTENT_FILEPROVIDER=CropImageUtils.getFileProviderName( getContext() );
         //初始化裁剪工具
         cropImageUtils = new CropImageUtils((Activity) getContext());
 

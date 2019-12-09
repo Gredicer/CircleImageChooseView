@@ -2,6 +2,7 @@ package com.gredicer.circleimagechooseview;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -22,7 +23,7 @@ import java.util.Date;
  */
 public class CropImageUtils {
     //7.0  ContentUri
-    public static final String FILE_CONTENT_FILEPROVIDER = "com.gredicer.circleimagechooseview.fileprovider";
+    public static String FILE_CONTENT_FILEPROVIDER = null;
     public static final String APP_NAME = "Gredicer";
     //打开相机的返回码
     public static final int REQUEST_CODE_TAKE_PHOTO = 11111;
@@ -44,6 +45,9 @@ public class CropImageUtils {
         this.activity = activity;
     }
 
+    public final static String getFileProviderName(Context context){
+        return context.getPackageName()+".fileprovider";
+    }
     /**
      * 打开系统相册
      */
