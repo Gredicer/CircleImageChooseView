@@ -51,3 +51,70 @@ dependencies {
 	
 
 ```
+#### Attributes
+```
+//设置对话框的背景色
+avatarImageView.setDialogBackgroundColor("#00AAAA"); 
+
+//设置按钮点击后的颜色
+avatarImageView.setBtnClickedColor("#00AAAA"); 
+
+//设置dialog显示的动画
+avatarImageView.setAnimResId(R.style.avatar_dialog_animation); 
+
+//设置标题的颜色
+avatarImageView.setTitleColor("#FFEEAA");  
+
+//设置按钮的背景色
+avatarImageView.setBtnBackgroundColor("#FFEEAA"); 
+
+//设置标题下的分割线的颜色
+avatarImageView.setTitleLineColor("#FFEEAA"); 
+
+//设置按钮之间的分割线的颜色
+avatarImageView.setLineColor("#FFEEAA"); 
+
+//设置标题的padding
+avatarImageView.setTitlePaddingTopBottom(30); 
+
+//设置按钮的padding
+avatarImageView.setBtnPaddingTopBottom(30); 
+
+//设置标题的文字
+avatarImageView.setTitleText("testTitle"); 
+
+//设置拍照按钮的文字
+avatarImageView.setPhotoButtonText("testPhotoText"); 
+
+//设置选择照片的文字
+avatarImageView.setChoosePicButtonText("testChooseText"); 
+
+//设置dialog的角度
+avatarImageView.setDialogCorner(20); 
+
+//设置按钮文本的颜色
+avatarImageView.setBtnTextColor("#FFEEAA"); 
+
+//设置标题的文字大小
+avatarImageView.setTitleTextSize(30); 
+
+//设置按钮的文字大小
+avatarImageView.setBtnTextSize(30); 
+```
+
+#### When the avataar switch is successful
+```
+        avatarImageView.setAfterCropListener(new AvatarImageView.AfterCropListener() {
+            @Override
+            public void afterCrop() {
+                Toast.makeText(MainActivity.this,"设置新的头像成功",Toast.LENGTH_SHORT).show();
+                //avatarImageView.setImageURI( avatarImageView.getImage_uri() );
+            }
+        });
+```
+
+### Set and get image
+```
+ avatarImageView.setImageURI( );	
+ avatarImageView.getImage_uri();	// This uri is the image that you cut 
+```
