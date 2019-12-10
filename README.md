@@ -6,8 +6,9 @@ A New circle image control and you can use it as head portrait control,It has tw
 
 This is base [SelectAvatarApplication](https://github.com/zhudfly/SelectAvatarApplication) and [CropPicture](https://github.com/Goodbao/CropPicture)
 
-<div align=center>![preview](/gif/1575939298556.gif)  
-
+<div style="align: center">
+<img src="/gif/1575939298556.gif/>
+</div>
 
 ## Gradle 
 Step 1. Add the JitPack repository to your build file 
