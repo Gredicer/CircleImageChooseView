@@ -8,6 +8,9 @@ This is base [SelectAvatarApplication](https://github.com/zhudfly/SelectAvatarAp
 
 ![preview](/gif/1575939298556.gif)
 
+<div align=center>
+	<img src="/gif/1575939298556.gif" width="100"> 
+</div>
 ## Gradle 
 Step 1. Add the JitPack repository to your build file 
 ```
