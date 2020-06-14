@@ -121,8 +121,9 @@ avatarImageView.setBtnTextSize(30);
  avatarImageView.getImage_uri();	// This uri is the image that you cut 
 ```
 ## Changelog
-* 1.2.3
-	* fit android 10
+* 1.2.4
+	* Fit API 29
+	* Environment.getExternalStorageDirectory() was replaced by activiy.getExternalCacheDir()
 * 1.0.2
 	* Initial release
 
