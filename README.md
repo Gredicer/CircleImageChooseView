@@ -21,7 +21,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.Gredicer:CircleImageChooseView:1.0.2'
+	        implementation 'com.github.Gredicer.CircleImageChooseView:avatorView:v1.2.3'
 	}
 ```
 
@@ -29,7 +29,7 @@ dependencies {
 
 #### layout  
 ```
-    <com.gredicer.cicleimagechooseview.AvatarImageView
+    <com.gredicer.avatorview.AvatarImageView
         android:id="@+id/avatarIv"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -120,3 +120,7 @@ avatarImageView.setBtnTextSize(30);
  avatarImageView.setImageURI( );	
  avatarImageView.getImage_uri();	// This uri is the image that you cut 
 ```
+#### Changelog
+***
+* 1.2.3
+	* fit android 10
