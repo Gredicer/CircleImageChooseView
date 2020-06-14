@@ -121,7 +121,6 @@ avatarImageView.setBtnTextSize(30);
  avatarImageView.getImage_uri();	// This uri is the image that you cut 
 ```
 ## Changelog
-***
 * 1.2.3
 	* fit android 10
 * 1.0.2
