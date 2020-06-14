@@ -21,7 +21,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.Gredicer:CircleImageChooseView:1.2.5'
+	       implementation 'com.github.Gredicer.CircleImageChooseView:avatorView:1.2.9'
 	}
 ```
 
