@@ -159,7 +159,7 @@ public class CropImageUtils {
                 if (data != null) {
                     Uri uri = data.getData();
                     if (uri != null) {
-                        String path = GetPathFromUri.getInstance().getPath(activity, uri);
+                        String path = ImageUtils.getRealPathFromUri(activity, uri);
                         File file = new File(path);
                         if (file.isFile() && listener != null)
                             listener.selectPictureFinish(path);

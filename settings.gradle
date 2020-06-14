@@ -1,2 +1,3 @@
+include ':avatorView'
 include ':app', ':cicleimagechooseview'
 rootProject.name='CircleImageChooseView'
