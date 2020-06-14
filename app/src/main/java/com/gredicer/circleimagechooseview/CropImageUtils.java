@@ -22,6 +22,7 @@ import java.util.Date;
  * 裁剪图片工具
  */
 public class CropImageUtils {
+    private Activity activity;
     //7.0  ContentUri
     public static String FILE_CONTENT_FILEPROVIDER = null;
     public static final String APP_NAME = "Gredicer";
@@ -32,17 +33,17 @@ public class CropImageUtils {
     //剪切图片的返回码
     public static final int REQUEST_CODE_CROP_PICTURE = 11113;
     //相机拍照默认存储路径
-    public static final String PICTURE_DIR = Environment.getExternalStorageDirectory()
-            + File.separator + "pictures" + File.separator + "cropUtils";
+    public static String PICTURE_DIR="";
     public String DATE = "";
     //照片图片名
     private String photo_image;
     //截图图片名
     private String crop_image;
-    private Activity activity;
+
 
     public CropImageUtils(Activity activity) {
         this.activity = activity;
+        PICTURE_DIR= activity.getExternalCacheDir() + File.separator + "pictures" + File.separator + "cropUtils";
     }
 
     public final static String getFileProviderName(Context context){
