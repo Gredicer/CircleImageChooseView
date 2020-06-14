@@ -284,8 +284,7 @@ public class AvatarImageView extends ImageView {
                 });
                 avatarDialog.setNegativeListener(new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface arg0, int arg1) {
-                        Log.d( TAG, "onClick: asd" );
-
+                        Log.e("asd", "onClick: "+"选择从手机选择选项" );
 
                         cropImageUtils.openAlbum();
                         avatarDialog.dismiss();
@@ -348,25 +347,27 @@ public class AvatarImageView extends ImageView {
 
 
     public void onActivityResult(int requestCode, int resultCode, final Intent data) {
-        Log.d( TAG, "onActivityResult: qwe" );
+        Log.d( "asd_AvatarImageView", requestCode+" "+resultCode+" "+ data );
         cropImageUtils.onActivityResult(requestCode, resultCode, data, new CropImageUtils.OnResultListener() {
             @Override
             public void takePhotoFinish(String path) {
-               // ToastUtils.INSTANCE.longToast("照片存放在：" + path);
+                Toast.makeText(mContext, "照片存放在：" + path, Toast.LENGTH_SHORT).show();
                 //拍照回调，去裁剪
                 cropImageUtils.cropPicture(path);
             }
 
             @Override
             public void selectPictureFinish(String path) {
-                //ToastUtils.INSTANCE.longToast("打开图片：" + path);
+                Toast.makeText(mContext, "打开图片：" + path, Toast.LENGTH_SHORT).show();
+                Log.e("asd", "selectPictureFinish: "+"4、打开图片成功，去剪裁"+path );
                 //相册回调，去裁剪
                 cropImageUtils.cropPicture(path);
             }
 
             @Override
             public void cropPictureFinish(String path) {
-                //ToastUtils.INSTANCE.longToast("裁剪保存在：" + path);
+                Toast.makeText(mContext, "裁剪保存在：" + path, Toast.LENGTH_SHORT).show();
+
                 //裁剪回调
                 setImageURI( Uri.parse( path ) );
                 setImage_uri(Uri.parse( path ));
